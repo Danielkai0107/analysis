@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "parse-reports": "node scripts/parseReports.js"
+    "parse-reports": "node scripts/parseReports.js",
+    "export": "next build"
   },
   "dependencies": {
     "next": "16.0.1",
