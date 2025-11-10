@@ -5,6 +5,7 @@ export interface CategoryData {
   view: number;
   like: number;
   count: number;
+  [key: string]: any;
 }
 
 export interface TagData {
@@ -12,6 +13,7 @@ export interface TagData {
   count: number;
   view: number;
   like: number;
+  [key: string]: any;
 }
 
 export interface WeekdayData {
@@ -19,12 +21,14 @@ export interface WeekdayData {
   count: number;
   view: number;
   like: number;
+  [key: string]: any;
 }
 
 export interface MonthlyData {
   month: string;
   count: number;
   percentage: number;
+  [key: string]: any;
 }
 
 export interface OnlineVsOfflineData {
@@ -32,22 +36,26 @@ export interface OnlineVsOfflineData {
   count: number;
   avgView: number;
   avgLike: number;
+  [key: string]: any;
 }
 
 export interface WeekdayVsWeekendData {
   type: string;
   count: number;
   percentage: number;
+  [key: string]: any;
 }
 
 export interface TopEventData {
   title: string;
   rate: number;
+  [key: string]: any;
 }
 
 export interface MarketItemData {
   name: string;
   count: number;
+  [key: string]: any;
 }
 
 export interface ReportData {
