@@ -140,12 +140,12 @@ const ReportViewer: React.FC<ReportViewerProps> = ({ reportData }) => {
                     <ResponsiveContainer width="100%" height={250}>
                       <PieChart>
                         <Pie
-                          data={reportData.weekdayVsWeekend}
+                          data={reportData.weekdayVsWeekend as any}
                           cx="50%"
                           cy="50%"
                           labelLine={false}
-                          label={({ name, percentage }) =>
-                            `${name} ${percentage.toFixed(1)}%`
+                          label={(props: any) =>
+                            `${props.name} ${props.percentage.toFixed(1)}%`
                           }
                           outerRadius={80}
                           fill="#8884d8"
